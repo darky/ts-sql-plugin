@@ -1,0 +1,11 @@
+import ts from 'typescript';
+import { Tags } from './make_fake_expression';
+export declare const is_array: (obj: any) => boolean;
+export declare const deep_flatten: (arr: any[]) => any[];
+export declare const find_all_nodes: (sourceFile: ts.SourceFile, cond: (n: ts.Node) => boolean) => ts.Node[];
+export declare const default_command: readonly ["psql", "-c"];
+export declare const default_tags: Tags;
+export declare const default_cost_pattern: RegExp;
+export declare const get_all_ts_files: (dirpath: string) => string[];
+export declare function report(sourceFile: ts.SourceFile, node: ts.Node, message: string, level?: 1 | 2 | 3): void;
+export declare function index_of_array(parent: any[], child: any[]): number;
