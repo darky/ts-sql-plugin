@@ -8,4 +8,4 @@ export interface Tags {
     raw: string;
     cond: string;
 }
-export declare const make_fake_expression: (program: ts.Program, tags: Tags) => (n: ts.Expression) => any;
+export declare const make_fake_expression: (type_checker: ts.TypeChecker, tags: Tags) => (n: ts.Expression) => any;
