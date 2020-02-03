@@ -7,5 +7,6 @@ export interface Tags {
     upd: string;
     raw: string;
     cond: string;
+    mock: string;
 }
 export declare const make_fake_expression: (type_checker: ts.TypeChecker, tags: Tags) => (n: ts.Expression) => any;

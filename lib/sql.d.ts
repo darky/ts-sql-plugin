@@ -35,5 +35,13 @@ export declare const sql: {
         text: string;
         values: any[];
     };
+    mock(obj: {
+        mock: string;
+        placeholder: string;
+    }): {
+        [x: string]: string | boolean | any[];
+        text: string;
+        values: any[];
+    };
 };
 export default sql;
